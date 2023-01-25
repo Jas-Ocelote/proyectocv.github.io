@@ -1,0 +1,30 @@
+/**Fuente de todo el docuemnto*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;    
+}
+
+
+.item1 { grid-area: header;}
+.item2 { grid-area: menu;
+        text-align: center; 
+}
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+.item5 { grid-area: main; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu menu right right right right'
+    'menu menu footer footer footer footer'
+    'menu menu main main main main';
+    gap: 50px;
+    padding: 15px;
+    margin: 50px;
+}
+
+.grid-container > div {
+  padding: 10px 0;
+}
